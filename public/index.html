@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	
+</head>
+<body>
+	
+	<ul class="nav nav-tabs">
+  <li role="presentation" >
+    <a href="/" role="button">
+      Home
+    </a>
+  </li>
+  <li role="presentation" >
+    <a href="#!/search-restaurant" role="button">
+      Search restaurant
+    </a>
+  </li>
+</ul>
+
+<ng-view></ng-view>
+
+	
+
+
+
+	<!-- cdn angular, jquery, bootsrap -->
+	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+	
+	<!-- -module- -->
+	<script src="js/app.js"></script>
+
+	<!-- -services- -->
+	<script src="js/services/services.js"></script>
+
+	<!-- -home- -->
+	<script src="js/routes/home/index.js"></script>
+	<script src="js/routes/home/controller.js"></script>
+
+	<!-- searchRestaurant -->
+	<script src="js/routes/searchRestaurant/index.js"></script>
+	<script src="js/routes/searchRestaurant/controller.js"></script>
+</body>
+</html>
